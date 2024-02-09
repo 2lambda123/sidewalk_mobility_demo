@@ -12,7 +12,7 @@ for k in [1,2,4,5,10]:
     for j in [1,2,4,5,10]:
         result = []
         for i in [1,2,4,5,10]:
-            value = f.readline()
+            value = f.readline(5_000_000)
             result.append(float(value))
         plt.bar([1,2,4,5,10], result, align='center', alpha=0.5)
         print(result)
